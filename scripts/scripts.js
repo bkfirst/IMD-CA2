@@ -34,3 +34,18 @@ function showPhotoModel() {
 
 }
 
+
+// Function to show the selected year card and hide others
+function showCard(year) {
+
+
+    event.preventDefault();
+    // Hide all cards
+    document.getElementById('first-year').style.display = 'none';
+    document.getElementById('second-year').style.display = 'none';
+    document.getElementById('third-year').style.display = 'none';
+    document.getElementById('fourth-year').style.display = 'none';
+
+    // Show the selected card
+    document.getElementById(year + '-year').style.display = 'block';
+}
